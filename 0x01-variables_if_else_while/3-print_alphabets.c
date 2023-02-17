@@ -7,11 +7,23 @@
 
 int main(void)
 {
-	char lc;
+	char c;
+	char d;
 
-	for (lc = 'a'; lc <= 'z'; lc++)
+	c = 'a';
+	d = 'A';
+	while
+	(c <= 'z')
 	{
-		putchar(lc);
+	putchar(c);
+	c++;
+	}
+	while
+		(d <= 'Z')
+	{
+			putchar(d);
+			d++;
 	}
 	putchar('\n');
 	return (0);
+}
