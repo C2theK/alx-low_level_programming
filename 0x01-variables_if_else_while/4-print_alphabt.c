@@ -1,12 +1,12 @@
 #include <stdio.h>
 /**
- *
- *  * main - Entry point
- *   * Description: 'the program's description'
+ *Print all the letters except q and e
+ *You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
+ *All your code should be in the main function
  *    * Return: Always 0 (Success)
 */
 int main(void)
 {
-		puts("\"Programming is like building a multilingual puzzle");
+		puts("\"abcdfghijklmnoprstuvwxyz");
 			return (0);
 }
