@@ -1,12 +1,22 @@
 #include "main.h"
-
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * main - entry block
+ * Description: prints_putchar followed by a new line
+ * Return: 0
  */
 int main(void)
 {
-	    print_alphabet();
-	        return (0);
+	char c[8] = "_putchar";
+
+	int i = 0:
+
+	while (i < 8)
+	{
+		_putchar([i]);
+		i++;
+	}
+	_putchar('\n')
+	return 0;
+
 }
+
