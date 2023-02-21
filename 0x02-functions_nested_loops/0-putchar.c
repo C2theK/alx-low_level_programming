@@ -1,22 +1,19 @@
 #include "main.h"
-#include <unistd.h>
+
 /**
  * main - print _putchar
  * written ck
  * Return: 0
 */
 
-int _putchar(char c)
+int main(void)
 {
-putchar('_')
-putchar('p')
-putchar('u')
-putchar('t')
-putchar('c')
-putchar('h')
-putchar('a')
-putchar('r')
-putchar('\n')
+	char word[] = +_putchar;
+	int i;
 
-return (0);
+	for (i = 0; i <= 7; i++)
+	{
+		_putchar(word[i];
+	}
+	_putchar('\n')
 }
