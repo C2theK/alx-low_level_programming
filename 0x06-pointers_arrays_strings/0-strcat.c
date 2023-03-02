@@ -2,12 +2,12 @@
 
 /**
 * strcat - Concatenates the string
-* @dest:input value
-* @src: input value
-* Return: A pointer to the destination string @dest.
+* @dest: first string
+* @src: second string
+* Return: char*
 */
 
-char *_strcat(char *dest, char *src)
+char *strncat(char *dest, const char *src, size_t n)
 {
 int index = 0, dest_len = 0;
 
