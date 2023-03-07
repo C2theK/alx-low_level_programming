@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* Entry point- we are to print_chessboard
+* print_chessboard - Entry Point
 * @a: array
 * Return: Always 0 (Success)
 */
