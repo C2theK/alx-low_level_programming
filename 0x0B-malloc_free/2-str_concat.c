@@ -9,30 +9,32 @@
 */
 char *str_concat(char *s1, char *s2)
 {
-char *concat;
-int len1 = 0, len2 = 0, c = 0, d = 0;
+char *conct;
+int i, ci;
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-while (*(s1 + c))
-len1++, c++;
-while (*(s2 + d))
-len2++, d++;
-len2++; /* adds null terminator to length-depending on parameters */
-concat = malloc(sizeof(char) * (len1 + len2)); /*allocates memory*/
-if (concat == NULL) /* validates memory */
+i = ci = 0;
+while (s1[i] != '\0')
+i++;
+while (s2[ci] != '\0')
+ci++;
+conct = malloc(sizeof(char) * (i + ci + 1));
+if (conct == NULL)
 return (NULL);
-c = 0, d = 0;
-while (c < len1) /* concatenate */
+i = ci = 0;
+while (s1[i] != '\0')
 {
-*(concat + c) = *(s1 + c);
-c++;
+conct[i] = s1[i];
+i++;
 }
-while (d < len2)
+while (s2[ci] != '\0')
 {
-*(concat + d) = *(s2 + d);
-c++, d++;
+conct[i] = s2[ci];
+i++, ci++;
 }
-return (concat);
+conct[i] = '\0';
+return (conct);
 }
+
